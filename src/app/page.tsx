@@ -217,7 +217,7 @@ export default function DashboardPage() {
               title="股票总数"
               value={data.summary.totalStocks}
               prefix={<DatabaseOutlined />}
-              suffix="只"
+              suffix="支"
               valueStyle={{ color: '#3f8600' }}
             />
           </Card>

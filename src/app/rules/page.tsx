@@ -289,8 +289,8 @@ export default function RulesPage() {
     active: data?.data.filter((r) => r.status === 'active').length || 0,
     paused: data?.data.filter((r) => r.status === 'paused').length || 0,
     avgAccuracy:
-      data?.data.reduce((sum, r) => sum + r.statistics.accuracyRate, 0) /
-        (data?.data.length || 1) || 0,
+      (data?.data.reduce((sum, r) => sum + r.statistics.accuracyRate, 0) || 0) /
+        (data?.data.length || 1),
   }
 
   return (

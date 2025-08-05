@@ -17,6 +17,7 @@ import {
   Col,
   Badge,
   Divider,
+  Statistic,
 } from 'antd'
 import {
   SearchOutlined,
@@ -335,7 +336,7 @@ export default function ExceptionsPage() {
           </Select>
 
           <Search
-            placeholder="搜索股票代码或名称"
+            placeholder="搜索股票代码或名称 (如: AAPL, 00700)"
             style={{ width: 240 }}
             onSearch={(value) => setFilters({ ...filters, search: value })}
             enterButton={<SearchOutlined />}
